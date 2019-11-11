@@ -100,6 +100,7 @@ public class Main {
     public static void main(String[] args) {
         if (args.length == 0) {
             Main.start();
+            return;
         }
         switch (args[0]) {
             case "start":

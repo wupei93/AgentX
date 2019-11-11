@@ -34,23 +34,23 @@ public class Configuration {
     private static final Logger log = LoggerFactory.getLogger(Configuration.class);
     private static final String BASE_PATH = System.getProperty("user.dir").replaceAll("\\\\", "/");
     private static final String[] CONFIG_FILE_PATH = {
-            "/conf/client.json",
+            /*"/conf/client.json",
             "/client.json",
             "/conf/agentx.json",
             "/agentx.json",
-            "/conf/config.json",
+            "/conf/config.json",*/
             "/config.json"
     };
     public static Configuration INSTANCE;
 
     @Expose
-    private String localHost = "0.0.0.0";
+    private String localHost = "127.0.0.1";
     @Expose
     private int localPort = 1080;
     @Expose
     private String mode = "agentx";
     @Expose
-    private String serverHost = "0.0.0.0";
+    private String serverHost = "127.0.0.1";
     @Expose
     private int[] serverPort = {9999};
     @Expose

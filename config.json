@@ -1,0 +1,15 @@
+{
+  "localHost": "127.0.0.1",
+  "localPort": 1080,
+  "mode": "agentx",
+  "serverHost": "0.0.0.0",
+  "serverPort": [
+    9999
+  ],
+  "protocol": "shadowsocks",
+  "encryption": "aes-256-cfb",
+  "password": "my_password",
+  "process": [
+    "encrypt"
+  ]
+}
